@@ -1,0 +1,36 @@
+@import './var';
+
+@mixin bp($feature, $value)
+{
+    @if $feature == 'min-width' {
+        @media screen and (min-width: $value) {
+            @content;
+        }
+    } @else if $feature == 'max-width' {
+        @media screen and (max-width: $value) {
+            @content;
+        }
+    }
+}
+
+@mixin flex($align: '', $justify: '', $direction: '', $gap: '') {
+    display: flex;
+
+    align-items: $align;
+
+    justify-content: $justify;
+
+    flex-direction: $direction;
+
+    gap: $gap;
+}
+
+@mixin text($font: '', $color: '', $size: '', $weigth: '') {
+    font-family: $font;
+
+    color: $color;
+
+    font-size: $size;
+
+    font-weight: $weigth;
+}

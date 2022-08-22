@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+/* line 4, ../scss/home.scss */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background-color: #fff;
+}
+/* line 10, ../scss/home.scss */
+header .container {
+  padding: 30px 0;
+}
+/* line 13, ../scss/home.scss */
+header .container .header-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: "";
+  gap: "";
+}
+/* line 16, ../scss/home.scss */
+header .container .header-navigation ul {
+  display: flex;
+  align-items: "";
+  justify-content: "";
+  flex-direction: "";
+  gap: 30px;
+}
+/* line 20, ../scss/home.scss */
+header .container .header-navigation ul li a {
+  font-family: "Raleway", sans-serif;
+  color: #070439;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* line 33, ../scss/home.scss */
+main .secao-1 .content,
+main .secao-2 .content {
+  display: flex;
+  align-items: center;
+  justify-content: "";
+  flex-direction: "";
+  gap: "";
+}
+/* line 36, ../scss/home.scss */
+main .secao-1 .content .bloco1,
+main .secao-1 .content .bloco2,
+main .secao-2 .content .bloco1,
+main .secao-2 .content .bloco2 {
+  display: flex;
+  align-items: "";
+  justify-content: "";
+  flex-direction: column;
+  gap: 30px;
+}
+/* line 44, ../scss/home.scss */
+main .secao-1 #btn-input {
+  display: flex;
+  align-items: "";
+  justify-content: "";
+  flex-direction: "";
+  gap: 15px;
+}

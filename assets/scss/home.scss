@@ -1,0 +1,48 @@
+@import "./mixin";
+@import "./var.scss";
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background-color: $c-white;
+
+    .container {
+        padding: $trim 0;
+
+        .header-navigation {
+            @include flex(center, space-between, '', '');
+
+            ul {
+                @include flex('', '', '', $trim);
+
+                li {
+                    a {
+                        @include text($f-stack-sans, $c-very-dark-blue, $f-size-default, 400);
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+
+    .secao-1,
+    .secao-2 {
+        .content {
+            @include flex(center, '', '', '');
+
+            .bloco1,
+            .bloco2 {
+                @include flex('', '', column, $trim);
+            }
+        }
+    }
+
+    .secao-1 {
+        #btn-input {
+            @include flex('', '', '', $trim-small);
+        }
+    }
+}

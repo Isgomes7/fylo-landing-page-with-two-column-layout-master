@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+// Breakpoints
+
+$bp-xsmall: 320px;
+$bp-small: 599px;
+$bp-medium: 770px;
+$bp-large: 979px;
+$bp-xlarge: 1199px;
+
+// Colors
+
+// Primary
+
+$c-very-dark-blue: hsl(243, 87%, 12%);
+$c-desaturated-blue: hsl(238, 22%, 44%);
+
+// Accent
+
+$c-bright-blue: hsl(224, 93%, 58%);
+$c-moderate-cyan: hsl(170, 45%, 43%);
+
+// Neutral
+
+$c-light-grayish-blue: hsl(240, 75%, 98%);
+$c-light-gray: hsl(0, 0%, 75%);
+$c-white: #fff;
+
+// Spacing //
+
+$small: 5px;
+$gap: 10px;
+$medium: 25px;
+$trim: 30px;
+$trim-small: 15px;
+$large: 37px;
+
+// Font Stacks
+
+// Headings, Call-to-actions, Header Navigation
+
+$f-stack-sans: 'Raleway', sans-serif;
+
+// Body
+
+$f-stack-special: 'Open Sans', sans-serif;
+
+// Typography
+
+// Body Copy
+
+$f-size-default: 16px;
+$f-size-medium: 22px;
+$f-size-large: 30px;
