@@ -21,11 +21,11 @@ li {
 .container {
     margin: 0 auto;
     padding: 0;
-    max-width: 1200px;
+    max-width: 1440px;
 }
 
 p {
-    @include text($f-stack-special, $c-very-dark-blue, $f-size-default, 400);
+    @include text($f-stack-special, $c-very-dark-blue, '', 400, $f-size-default);
     margin: 0;
     line-height: 1.3;
 }
@@ -33,15 +33,20 @@ p {
 h1 {
     margin: 0;
     line-height: 1.4;
-    @include text($f-stack-sans, $c-very-dark-blue, $f-size-large, 700);
+    @include text($f-stack-sans, $c-very-dark-blue, '', 700, $f-size-large);
 }
 
 h2 {
     margin: 0;
     line-height: 1.4;
-    @include text($f-stack-sans, $c-very-dark-blue, $f-size-large, 700);
+    @include text($f-stack-sans, $c-very-dark-blue, '', 700, $f-size-large);
 }
 
+
+h3 {
+    @include text($f-stack-sans, $c-very-dark-blue, '', 700);
+    margin: 0;
+}
 
 li {
     list-style: none;

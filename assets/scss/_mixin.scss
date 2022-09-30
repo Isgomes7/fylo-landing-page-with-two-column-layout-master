@@ -16,21 +16,41 @@
 @mixin flex($align: '', $justify: '', $direction: '', $gap: '') {
     display: flex;
 
-    align-items: $align;
+    @if $align  !='' {
+        align-items: $align;
+    }
 
-    justify-content: $justify;
+    @if $justify  !='' {
+        justify-content: $justify;
+    }
 
-    flex-direction: $direction;
+    @if $direction  !='' {
+        flex-direction: $direction;
+    }
 
-    gap: $gap;
+    @if $gap  !='' {
+        gap: $gap;
+    }
 }
 
-@mixin text($font: '', $color: '', $size: '', $weigth: '') {
-    font-family: $font;
+@mixin text($font: '', $color: '', $align: '', $weigth: '', $size: '') {
+    @if $font  !='' {
+        font-family: $font;
+    }
 
-    color: $color;
+    @if $color  !='' {
+        color: $color;
+    }
 
-    font-size: $size;
+    @if $align  !='' {
+        text-align: $align;
+    }
 
-    font-weight: $weigth;
+    @if $weigth !='' {
+        font-weight: $weigth;
+    }
+
+    @if $size  !='' {
+        font-size: $size;
+    }
 }

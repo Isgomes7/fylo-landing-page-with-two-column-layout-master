@@ -29,20 +29,212 @@ header {
 main {
 
     .secao-1,
-    .secao-2 {
+    .secao-2,
+    .secao-03 {
         .content {
-            @include flex(center, '', '', '');
+            @include flex(center, space-between, row-reverse, '');
+            padding: 0 $trim;
 
             .bloco1,
             .bloco2 {
                 @include flex('', '', column, $trim);
             }
+
+            @include bp(max-width, $bp-medium) {
+                flex-direction: column;
+            }
         }
     }
 
     .secao-1 {
+        margin-bottom: 300px;
+
         #btn-input {
             @include flex('', '', '', $trim-small);
+            height: 40px;
+        }
+    }
+
+    .secao-2 {
+        background-color: $c-light-grayish-blue;
+
+        .img-banner {
+            background: url(../images/bg-curve-desktop.svg) no-repeat;
+            height: 114px;
+            position: relative;
+            bottom: 108px;
+            background-size: 100%;
+        }
+
+        .container {
+
+            .bloco2 {
+                .text-02 {
+                    img {
+                        position: relative;
+                        top: 3px;
+                    }
+                }
+            }
+
+            .testimonials {
+                width: 100%;
+                max-width: 350px;
+                background-color: $c-white;
+                border-radius: $trim-small;
+                padding: $trim;
+
+                .text {
+                    width: 100%;
+                    max-width: 340px;
+                    line-height: 1.4;
+                    margin: $trim-small 0;
+                }
+
+                .content-testimonials {
+                    @include flex(center, '', '', $gap);
+
+                    img {
+                        width: 100%;
+                        max-width: 45px;
+                        border-radius: 50%;
+                    }
+
+                    .info {
+                        line-height: 1.4;
+
+                        h3 {
+                            font-size: 16px;
+                        }
+
+                        p {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.secao-03 {
+    background-color: $c-desaturated-blue;
+
+    .container {
+        padding: 80px 0;
+
+        .bloco-03 {
+            @include flex('', '', column, $gap);
+            width: 100%;
+            max-width: 500px;
+
+            h2,
+            p {
+                @include text('', $c-white);
+            }
+        }
+
+        .bloco-04 {
+            width: 100%;
+            max-width: 300px;
+
+            #btn-input {
+                @include flex('', '', column, $trim-small);
+                width: 100%;
+
+                input,
+                button {
+                    height: 40px;
+                }
+
+                input {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background-color: $c-very-dark-blue;
+
+    .container {
+        padding: 80px 0;
+
+        .logo-footer {
+            background: url(../images/logo-footer.svg) no-repeat;
+            height: 50px;
+            margin-bottom: $trim;
+        }
+
+        .footer-about {
+            @include flex('', space-between);
+
+            .bloco-footer {
+                @include flex('', '', column, $trim-small);
+
+                .item-bloco-01 {
+                    .icon {
+                        background: url(../images/icon-phone.svg) no-repeat;
+                        height: 18px;
+                        width: 18px;
+                    }
+                }
+
+                .item-bloco-02 {
+                    .icon {
+                        background: url(../images/icon-email.svg) no-repeat;
+                        width: 20px;
+                        height: 18px;
+                    }
+                }
+
+                .item-bloco-01,
+                .item-bloco-02 {
+                    @include flex(center, '', '', $trim-small);
+                }
+            }
+
+            .item-bloco-01,
+            .item-bloco-02,
+            .bloco-footer-about {
+
+                .text,
+                li {
+                    @include text('', $c-white)
+                }
+            }
+
+            .bloco-footer-about {
+                @include flex('', '', column, $trim-small);
+
+                li {
+                    cursor: pointer;
+
+                    &:hover {
+                        color: $c-desaturated-blue;
+                    }
+                }
+            }
+
+            .bloco-footer-redes {
+                @include flex('', '', '', $trim-small);
+
+                .social-1,
+                .social-2,
+                .social-3 {
+                    width: 35px;
+                    height: 35px;
+                    border: 1px solid $c-white;
+                    border-radius: 50%;
+                    @include flex(center, center);
+                    cursor: pointer;
+
+                    svg path:hover {
+                        fill: $c-bright-blue;
+                    }
+                }
+            }
         }
     }
 }

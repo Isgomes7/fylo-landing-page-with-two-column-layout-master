@@ -25,15 +25,15 @@ li {
 .container {
   margin: 0 auto;
   padding: 0;
-  max-width: 1200px;
+  max-width: 1440px;
 }
 
 /* line 27, ../scss/_reset.scss */
 p {
   font-family: "Open Sans", sans-serif;
   color: #070439;
-  font-size: 16px;
   font-weight: 400;
+  font-size: 16px;
   margin: 0;
   line-height: 1.3;
 }
@@ -44,8 +44,8 @@ h1 {
   line-height: 1.4;
   font-family: "Raleway", sans-serif;
   color: #070439;
-  font-size: 30px;
   font-weight: 700;
+  font-size: 30px;
 }
 
 /* line 39, ../scss/_reset.scss */
@@ -54,30 +54,38 @@ h2 {
   line-height: 1.4;
   font-family: "Raleway", sans-serif;
   color: #070439;
-  font-size: 30px;
   font-weight: 700;
+  font-size: 30px;
 }
 
 /* line 46, ../scss/_reset.scss */
+h3 {
+  font-family: "Raleway", sans-serif;
+  color: #070439;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* line 51, ../scss/_reset.scss */
 li {
   list-style: none;
 }
 
-/* line 50, ../scss/_reset.scss */
+/* line 55, ../scss/_reset.scss */
 a {
   text-decoration: none;
 }
-/* line 53, ../scss/_reset.scss */
+/* line 58, ../scss/_reset.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 58, ../scss/_reset.scss */
+/* line 63, ../scss/_reset.scss */
 img {
   max-width: 100%;
 }
 
-/* line 62, ../scss/_reset.scss */
+/* line 67, ../scss/_reset.scss */
 #email {
   border: 1px solid black;
   border-radius: 5px;
@@ -88,7 +96,7 @@ img {
   cursor: pointer;
 }
 
-/* line 72, ../scss/_reset.scss */
+/* line 77, ../scss/_reset.scss */
 button {
   min-height: 30px;
   max-width: 170px;
@@ -100,7 +108,7 @@ button {
   cursor: pointer;
   transition: 0.5s;
 }
-/* line 83, ../scss/_reset.scss */
+/* line 88, ../scss/_reset.scss */
 button:hover {
   opacity: 0.7;
 }
