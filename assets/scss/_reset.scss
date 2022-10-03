@@ -2,6 +2,7 @@
 
 * {
     font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
 }
 
 body,
@@ -22,24 +23,26 @@ li {
     margin: 0 auto;
     padding: 0;
     max-width: 1440px;
+
+    @include bp(max-width, $bp-medium) {
+        padding: 0 $trim;
+    }
 }
 
 p {
-    @include text($f-stack-special, $c-very-dark-blue, '', 400, $f-size-default);
+    @include text($f-stack-special, $c-very-dark-blue, '', 400, 15px);
     margin: 0;
-    line-height: 1.3;
+    line-height: 1.5;
 }
 
 h1 {
     margin: 0;
     line-height: 1.4;
-    @include text($f-stack-sans, $c-very-dark-blue, '', 700, $f-size-large);
 }
 
 h2 {
     margin: 0;
     line-height: 1.4;
-    @include text($f-stack-sans, $c-very-dark-blue, '', 700, $f-size-large);
 }
 
 
@@ -70,13 +73,17 @@ img {
     max-width: 250px;
     width: 100%;
     padding: 0 $trim-small;
-    min-height: $trim;
+    height: 40px;
     cursor: pointer;
+
+    @include bp(max-width, $bp-medium) {
+        max-width: 100%;
+    }
 }
 
 button {
     min-height: $trim;
-    max-width: 170px;
+    max-width: 210px;
     width: 100%;
     background-color: $c-bright-blue;
     color: $c-white;
@@ -84,8 +91,13 @@ button {
     border: 0;
     cursor: pointer;
     transition: 0.5s;
+    height: 40px;
 
     &:hover {
         opacity: 0.7;
+    }
+
+    @include bp(max-width, $bp-medium) {
+        max-width: 100%;
     }
 }

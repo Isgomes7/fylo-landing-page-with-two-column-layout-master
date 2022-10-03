@@ -29,18 +29,41 @@ header .container .header-navigation ul li a {
   text-align: 16px;
   font-weight: 400;
 }
+@media screen and (max-width: 770px) {
+  /* line 16, ../scss/home.scss */
+  header .container .header-navigation ul {
+    gap: 15px;
+  }
+}
+@media screen and (max-width: 770px) {
+  /* line 13, ../scss/home.scss */
+  header .container .header-navigation {
+    gap: 15px;
+  }
+}
+@media screen and (max-width: 770px) {
+  /* line 34, ../scss/home.scss */
+  header .container .header-navigation img {
+    max-width: 100px;
+  }
+}
+@media screen and (max-width: 770px) {
+  /* line 10, ../scss/home.scss */
+  header .container {
+    padding: 30px;
+  }
+}
 
-/* line 34, ../scss/home.scss */
+/* line 52, ../scss/home.scss */
 main .secao-1 .content,
 main .secao-2 .content,
 main .secao-03 .content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-direction: row-reverse;
   padding: 0 30px;
 }
-/* line 38, ../scss/home.scss */
+/* line 56, ../scss/home.scss */
 main .secao-1 .content .bloco1,
 main .secao-1 .content .bloco2,
 main .secao-2 .content .bloco1,
@@ -52,28 +75,101 @@ main .secao-03 .content .bloco2 {
   gap: 30px;
 }
 @media screen and (max-width: 770px) {
-  /* line 34, ../scss/home.scss */
+  /* line 52, ../scss/home.scss */
   main .secao-1 .content,
   main .secao-2 .content,
   main .secao-03 .content {
     flex-direction: column;
+    gap: 15px;
+    padding: 0;
   }
 }
-/* line 49, ../scss/home.scss */
+/* line 69, ../scss/home.scss */
 main .secao-1 {
   margin-bottom: 300px;
 }
-/* line 52, ../scss/home.scss */
+/* line 72, ../scss/home.scss */
+main .secao-1 .content {
+  flex-direction: row-reverse;
+}
+@media screen and (max-width: 770px) {
+  /* line 72, ../scss/home.scss */
+  main .secao-1 .content {
+    flex-direction: column;
+  }
+}
+/* line 79, ../scss/home.scss */
+main .secao-1 .content .title {
+  font-family: "Raleway", sans-serif;
+  color: #070439;
+  font-weight: 700;
+  font-size: 30px;
+}
+@media screen and (max-width: 770px) {
+  /* line 79, ../scss/home.scss */
+  main .secao-1 .content .title {
+    text-align: center;
+    font-size: 16px;
+  }
+}
+/* line 89, ../scss/home.scss */
+main .secao-1 p {
+  max-width: 510px;
+}
+@media screen and (max-width: 770px) {
+  /* line 89, ../scss/home.scss */
+  main .secao-1 p {
+    text-align: center;
+  }
+}
+/* line 97, ../scss/home.scss */
 main .secao-1 #btn-input {
   display: flex;
   gap: 15px;
-  height: 40px;
 }
-/* line 58, ../scss/home.scss */
+@media screen and (max-width: 770px) {
+  /* line 97, ../scss/home.scss */
+  main .secao-1 #btn-input {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 770px) {
+  /* line 69, ../scss/home.scss */
+  main .secao-1 {
+    margin-bottom: 100px;
+  }
+}
+/* line 110, ../scss/home.scss */
 main .secao-2 {
   background-color: #f6f6fe;
 }
-/* line 61, ../scss/home.scss */
+/* line 113, ../scss/home.scss */
+main .secao-2 .content {
+  flex-direction: row-reverse;
+  padding-bottom: 100px;
+}
+@media screen and (max-width: 770px) {
+  /* line 113, ../scss/home.scss */
+  main .secao-2 .content {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+/* line 122, ../scss/home.scss */
+main .secao-2 .content .title {
+  font-family: "Raleway", sans-serif;
+  color: #070439;
+  font-weight: 700;
+  font-size: 28px;
+}
+@media screen and (max-width: 770px) {
+  /* line 122, ../scss/home.scss */
+  main .secao-2 .content .title {
+    font-size: 12px;
+    text-align: center;
+  }
+}
+/* line 132, ../scss/home.scss */
 main .secao-2 .img-banner {
   background: url(../images/bg-curve-desktop.svg) no-repeat;
   height: 114px;
@@ -81,12 +177,53 @@ main .secao-2 .img-banner {
   bottom: 108px;
   background-size: 100%;
 }
-/* line 73, ../scss/home.scss */
+@media screen and (max-width: 770px) {
+  /* line 132, ../scss/home.scss */
+  main .secao-2 .img-banner {
+    height: 53px;
+    bottom: 24px;
+  }
+}
+/* line 147, ../scss/home.scss */
+main .secao-2 .container .bloco2 {
+  width: 100%;
+}
+/* line 150, ../scss/home.scss */
+main .secao-2 .container .bloco2 .text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 550px;
+}
+@media screen and (max-width: 770px) {
+  /* line 150, ../scss/home.scss */
+  main .secao-2 .container .bloco2 .text {
+    max-width: 100%;
+  }
+  /* line 157, ../scss/home.scss */
+  main .secao-2 .container .bloco2 .text p {
+    font-size: 14px;
+  }
+}
+/* line 164, ../scss/home.scss */
 main .secao-2 .container .bloco2 .text-02 img {
   position: relative;
   top: 3px;
 }
-/* line 80, ../scss/home.scss */
+@media screen and (max-width: 770px) {
+  /* line 163, ../scss/home.scss */
+  main .secao-2 .container .bloco2 .text-02 {
+    max-width: 170px;
+    margin: 0 auto;
+    border-bottom: 1px solid #3c9f8f;
+    padding-bottom: 5px;
+  }
+  /* line 175, ../scss/home.scss */
+  main .secao-2 .container .bloco2 .text-02 a {
+    color: #3c9f8f;
+  }
+}
+/* line 182, ../scss/home.scss */
 main .secao-2 .container .testimonials {
   width: 100%;
   max-width: 350px;
@@ -94,47 +231,76 @@ main .secao-2 .container .testimonials {
   border-radius: 15px;
   padding: 30px;
 }
-/* line 87, ../scss/home.scss */
-main .secao-2 .container .testimonials .text {
+/* line 189, ../scss/home.scss */
+main .secao-2 .container .testimonials .text-testimonials {
   width: 100%;
   max-width: 340px;
   line-height: 1.4;
   margin: 15px 0;
 }
-/* line 94, ../scss/home.scss */
+@media screen and (max-width: 770px) {
+  /* line 189, ../scss/home.scss */
+  main .secao-2 .container .testimonials .text-testimonials {
+    max-width: 100%;
+    margin: 0 0 15px;
+  }
+  /* line 199, ../scss/home.scss */
+  main .secao-2 .container .testimonials .text-testimonials p {
+    font-size: 10px;
+  }
+}
+/* line 205, ../scss/home.scss */
 main .secao-2 .container .testimonials .content-testimonials {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-/* line 97, ../scss/home.scss */
+/* line 208, ../scss/home.scss */
 main .secao-2 .container .testimonials .content-testimonials img {
   width: 100%;
   max-width: 45px;
   border-radius: 50%;
 }
-/* line 103, ../scss/home.scss */
+/* line 214, ../scss/home.scss */
 main .secao-2 .container .testimonials .content-testimonials .info {
   line-height: 1.4;
 }
-/* line 106, ../scss/home.scss */
+/* line 217, ../scss/home.scss */
 main .secao-2 .container .testimonials .content-testimonials .info h3 {
   font-size: 16px;
 }
-/* line 110, ../scss/home.scss */
+@media screen and (max-width: 770px) {
+  /* line 217, ../scss/home.scss */
+  main .secao-2 .container .testimonials .content-testimonials .info h3 {
+    font-size: 12px;
+  }
+}
+/* line 225, ../scss/home.scss */
 main .secao-2 .container .testimonials .content-testimonials .info p {
   font-size: 13px;
 }
+@media screen and (max-width: 770px) {
+  /* line 225, ../scss/home.scss */
+  main .secao-2 .container .testimonials .content-testimonials .info p {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 770px) {
+  /* line 182, ../scss/home.scss */
+  main .secao-2 .container .testimonials {
+    max-width: 100%;
+  }
+}
 
-/* line 120, ../scss/home.scss */
+/* line 243, ../scss/home.scss */
 .secao-03 {
   background-color: #585989;
 }
-/* line 123, ../scss/home.scss */
+/* line 246, ../scss/home.scss */
 .secao-03 .container {
   padding: 80px 0;
 }
-/* line 126, ../scss/home.scss */
+/* line 249, ../scss/home.scss */
 .secao-03 .container .bloco-03 {
   display: flex;
   flex-direction: column;
@@ -142,78 +308,97 @@ main .secao-2 .container .testimonials .content-testimonials .info p {
   width: 100%;
   max-width: 500px;
 }
-/* line 131, ../scss/home.scss */
+/* line 254, ../scss/home.scss */
 .secao-03 .container .bloco-03 h2,
 .secao-03 .container .bloco-03 p {
   color: #fff;
 }
-/* line 137, ../scss/home.scss */
+@media screen and (max-width: 770px) {
+  /* line 254, ../scss/home.scss */
+  .secao-03 .container .bloco-03 h2,
+  .secao-03 .container .bloco-03 p {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 770px) {
+  /* line 263, ../scss/home.scss */
+  .secao-03 .container .bloco-03 p {
+    font-size: 16px;
+  }
+}
+/* line 270, ../scss/home.scss */
 .secao-03 .container .bloco-04 {
   width: 100%;
   max-width: 300px;
 }
-/* line 141, ../scss/home.scss */
+/* line 274, ../scss/home.scss */
 .secao-03 .container .bloco-04 #btn-input {
   display: flex;
   flex-direction: column;
   gap: 15px;
   width: 100%;
 }
-/* line 145, ../scss/home.scss */
+/* line 278, ../scss/home.scss */
 .secao-03 .container .bloco-04 #btn-input input,
 .secao-03 .container .bloco-04 #btn-input button {
   height: 40px;
 }
-/* line 150, ../scss/home.scss */
+/* line 283, ../scss/home.scss */
 .secao-03 .container .bloco-04 #btn-input input {
   max-width: 100%;
 }
+@media screen and (max-width: 770px) {
+  /* line 246, ../scss/home.scss */
+  .secao-03 .container {
+    padding: 80px 30px;
+  }
+}
 
-/* line 158, ../scss/home.scss */
+/* line 295, ../scss/home.scss */
 footer {
   background-color: #070439;
 }
-/* line 161, ../scss/home.scss */
+/* line 298, ../scss/home.scss */
 footer .container {
   padding: 80px 0;
 }
-/* line 164, ../scss/home.scss */
+/* line 301, ../scss/home.scss */
 footer .container .logo-footer {
   background: url(../images/logo-footer.svg) no-repeat;
   height: 50px;
   margin-bottom: 30px;
 }
-/* line 170, ../scss/home.scss */
+/* line 307, ../scss/home.scss */
 footer .container .footer-about {
   display: flex;
   justify-content: space-between;
 }
-/* line 173, ../scss/home.scss */
+/* line 310, ../scss/home.scss */
 footer .container .footer-about .bloco-footer {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-/* line 177, ../scss/home.scss */
+/* line 314, ../scss/home.scss */
 footer .container .footer-about .bloco-footer .item-bloco-01 .icon {
   background: url(../images/icon-phone.svg) no-repeat;
   height: 18px;
   width: 18px;
 }
-/* line 185, ../scss/home.scss */
+/* line 322, ../scss/home.scss */
 footer .container .footer-about .bloco-footer .item-bloco-02 .icon {
   background: url(../images/icon-email.svg) no-repeat;
   width: 20px;
   height: 18px;
 }
-/* line 192, ../scss/home.scss */
+/* line 329, ../scss/home.scss */
 footer .container .footer-about .bloco-footer .item-bloco-01,
 footer .container .footer-about .bloco-footer .item-bloco-02 {
   display: flex;
   align-items: center;
   gap: 15px;
 }
-/* line 202, ../scss/home.scss */
+/* line 339, ../scss/home.scss */
 footer .container .footer-about .item-bloco-01 .text,
 footer .container .footer-about .item-bloco-01 li,
 footer .container .footer-about .item-bloco-02 .text,
@@ -222,26 +407,26 @@ footer .container .footer-about .bloco-footer-about .text,
 footer .container .footer-about .bloco-footer-about li {
   color: #fff;
 }
-/* line 208, ../scss/home.scss */
+/* line 345, ../scss/home.scss */
 footer .container .footer-about .bloco-footer-about {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-/* line 211, ../scss/home.scss */
+/* line 348, ../scss/home.scss */
 footer .container .footer-about .bloco-footer-about li {
   cursor: pointer;
 }
-/* line 214, ../scss/home.scss */
+/* line 351, ../scss/home.scss */
 footer .container .footer-about .bloco-footer-about li:hover {
   color: #585989;
 }
-/* line 220, ../scss/home.scss */
+/* line 357, ../scss/home.scss */
 footer .container .footer-about .bloco-footer-redes {
   display: flex;
   gap: 15px;
 }
-/* line 223, ../scss/home.scss */
+/* line 360, ../scss/home.scss */
 footer .container .footer-about .bloco-footer-redes .social-1,
 footer .container .footer-about .bloco-footer-redes .social-2,
 footer .container .footer-about .bloco-footer-redes .social-3 {
@@ -254,9 +439,28 @@ footer .container .footer-about .bloco-footer-redes .social-3 {
   justify-content: center;
   cursor: pointer;
 }
-/* line 233, ../scss/home.scss */
+/* line 370, ../scss/home.scss */
 footer .container .footer-about .bloco-footer-redes .social-1 svg path:hover,
 footer .container .footer-about .bloco-footer-redes .social-2 svg path:hover,
 footer .container .footer-about .bloco-footer-redes .social-3 svg path:hover {
   fill: #3065f8;
+}
+@media screen and (max-width: 770px) {
+  /* line 357, ../scss/home.scss */
+  footer .container .footer-about .bloco-footer-redes {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 770px) {
+  /* line 307, ../scss/home.scss */
+  footer .container .footer-about {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 770px) {
+  /* line 298, ../scss/home.scss */
+  footer .container {
+    padding: 80px 30px;
+  }
 }
